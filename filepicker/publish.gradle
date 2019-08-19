@@ -2,14 +2,14 @@ apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 
 
-def prjVersion = "1.0.8"
-def prjGroup = "com.vincent.filepicker"
+def prjVersion = "1.0.1"
+def prjGroup = "com.shera.filepicker"
 def prjName = "MultiTypeFilePicker"
 def prjArtifactId = "MultiTypeFilePicker"
 def prjDescription = "A light Android file picker library"
-def siteUrl = 'https://github.com/fishwjy/MultiType-FilePicker'      // 项目的主页
-def gitUrl = 'https://github.com/fishwjy/MultiType-FilePicker.git'   // Git仓库的url
-def pckName = "MultiTypeFilePicker"                                  //发布到JCenter上的项目名字
+def siteUrl = 'https://github.com/mhtparyani/FilePicker'
+def gitUrl = 'https://github.com/mhtparyani/FilePicker.git'
+def pckName = "MultiTypeFilePicker"
 def bintrayRepo = "maven"
 
 version = prjVersion
@@ -36,9 +36,9 @@ install {
             }
             developers {
                 developer {
-                    id 'vincentwoo'
-                    name 'VincentWoo'
-                    email 'fishwjy@gmail.com'
+                    id 'shera'
+                    name 'Shera'
+                    email 'mhtparyani0@gmail.com'
                 }
             }
             scm {

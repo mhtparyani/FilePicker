@@ -1,21 +1,19 @@
-# MultiType-FilePicker
-[![Download](https://api.bintray.com/packages/vincentwoo/maven/MultiTypeFilePicker/images/download.svg) ](https://bintray.com/vincentwoo/maven/MultiTypeFilePicker/_latestVersion)
-
-This is a light Android file picker library.
-
-Please star this library if you like it. :)
-
-## Demo
-![Demo](/pic/pick_img.gif)
-![Demo](/pic/pick_img1.gif)
-![Demo](/pic/pick_vid.png)
-![Demo](/pic/pick_aud.png)
-![Demo](/pic/pick_file.png)
-![Demo](/pic/pick_photo_folder.png)
-
 ## Usage
 ### 1.Import to your project
-    compile 'com.vincent.filepicker:MultiTypeFilePicker:latestVersion' 
+    Add it in your root build.gradle at the end of repositories:
+
+	Step 1.
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+	Step 2. Add the dependency
+
+	dependencies {
+	        implementation 'com.github.mhtparyani:FilePicker:1.0.0'
+	}
     
 ### 2.Start Activity For Result
     case R.id.btn_pick_image:
@@ -65,45 +63,3 @@ Please star this library if you like it. :)
         }
         break;
 
-## Version Log
-1.0.0    Initial Version
-
-1.0.1    Fix issue #8 and enhance URL extract
-
-1.0.2    Add resource prefix and update library version
-
-1.0.3    Modify fetching video thumbnail rule
-
-1.0.4    Fix "Attempted to access a cursor after it has been closed" in "onVideoResult"
-
-1.0.5    Use Glide to load video thumbnail, delete record in Media DB when user cancel taking photo and add prefix to resources
-
-1.0.6    Add folder feature
-
-1.0.7    Upgrade to Glide 4
-
-1.0.8    Fix provider crash on Android 7.0 above
-
-## Thanks
-Inspired by [Android-FilePicker](https://github.com/DroidNinja/Android-FilePicker)
-
-Image Viewer provide by [PhotoView](https://github.com/bm-x/PhotoView)
-
-Image Loader provide by [Glide](https://github.com/bumptech/glide)
-
-## License
-```
-Copyright 2016 Vincent Woo
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-   http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-```
